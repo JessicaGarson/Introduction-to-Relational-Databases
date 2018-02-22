@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Introduction to Relational Databases</title>
+
+    <meta name="description" content="Introduction to Relational Databases">
+    <meta name="author" content="Jessica Garson">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Introduction to SQL</h1>
+            <small>Thursday, Feb 22th</small>
+        </section>
+
+        <section>
+          <h1>Set Up</h1>
+        </section>
+
+        <section>
+          <h2>Hello</h2>
+          <img alt="jesgarson" src="./img/jessgarson.jpg">
+        </section>
+
+        <section>
+          <h2>Make a New Friend</h2>
+          Find a partner and ask the following:
+          <ul>
+            <li>Name</li>
+            <li>One sentance bio</li>
+            <li>Why do you want to learn SQL?</li>
+            <li>Favorite candy bar?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Norms</h2>
+          Norms allow us to us to define what is and isn't acceptable in a training space.
+        </section>
+
+        <section>
+          <h2>Sample Norms</h2>
+          <ul>
+            <li>Don't be afraid to not the know the answer</li>
+            <li>Step up, step back</li>
+            <li>No shame in googling the answer</li>
+            <li>We will get errors today</li>
+            <li>If you need help, ask for it</li>
+            <li>If the material is coming naturally for you, help a neighbor out</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Objectives</h2>
+          By the end of today's lesson we will be able to answer the following questions:
+          <p>
+          <ul>
+            <li>What is SQL and why do we use it?</li>
+            <li>What is a relational database?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>SQL</h1>
+        </section>
+
+        <section>
+          <h2>What is SQL?</h2>
+          SQL stands for Structured Query Language. It is a language that allows us to work with complex datasets. We can use SQL to get the information we need from a dataset.
+        </section>
+
+        <section>
+          <h2>S is for Structured</h2>
+          <ul>
+            <li>Data in a SQL database is stored in pre-defined tables</li>
+            <li>Tables are populated by fields with prescribed data types</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data Types</h2>
+          Examples of data types:
+          <ul>
+            <li>INTEGER, i.e. 1234</li>
+            <li>VARCHAR and TEXT, i.e. “Jessica Garson”</li>
+            <li>FLOAT and DOUBLE and DECIMAL, i.e. 3.14159</li>
+            <li>DATE and TIMESTAMP, i.e. 2013-04-15</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Q is for Query</h2>
+          A query is a question or command issued to the database
+        </section>
+
+        <section>
+          <h2>Examples of Queries You Can Run</h2>
+          <ul>
+            <li>Find all the members who are subscribed to my email list</li>
+            <li>Find all donations that are greater than $50.00</li>
+            <li>Insert new records into the database from “new_members_febuary_2018.csv</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>L is for Language</h2>
+          A syntax is basically a language’s grammar, and the words that can be used in that language, the order that is required, and the way each command relates to the others.
+        </section>
+
+        <section>
+          <h2>Flavors of SQL</h2>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+            <li>MariaDB</li>
+            <li>Oracle</li>
+            <li>MS SQL Server</li>
+            <li>Others too!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>But I have Excel?</h2>
+          While Excel is great, it's not always the best for working with all datasets.
+          <ul>
+            <li>Can crash with too many rows or too many complex functions</li>
+            <li>It can truncate data</li>
+            <li>Difficult to handle messy/complex datasets</li>
+            <li>Difficult to connect multiple datasets</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>So why SQL?</h2>
+          <ul>
+            <li>SQL can handle large and complex datasets</li>
+            <li>SQL can quickly retrieve information about many different, but related datasets</li>
+            <li>SQL can be “scripted” and automated</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>CRUD</h2>
+          Create - add a new record to a table
+          <p>
+          Read - get a subset of data from one or more tables (can include operations performed on that data)
+          <p>
+          Update - change the fields of one or more existing records
+          <p>
+          Destroy - remove a record from a table
+        </section>
+
+        <section>
+          <h2>Relational Databases</h2>
+          The term relational databases refers to how data can connect with each other.
+        </section>
+
+        <section>
+          <h2>Major Key Alert!</h2>
+          The key to SQL is keys!
+          <p>
+          Primary keys are the unique identifier of each record in a database
+          <p>
+          Foreign keys are special fields within a table that contain the primary key, or any field, of a record from another table
+        </section>
+
+        <section>
+          <h2>Types of Relations in SQL</h2>
+          One-to-one
+          <p>
+          Think a table with SSNs and a table with People
+          <p>
+          One-to-many
+          <p>
+          Think a table with Members and a Table with Donations
+          <p>
+          Many-to-many
+          <p>
+          Think a table with authors and books
+        </section>
+
+        <section>
+          <h2>Contact Me</h2>
+          I can be reached by email at jessica.garson@gmail.com
+        </section>
+
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+
+</script>
+
+</body>
+</html>
